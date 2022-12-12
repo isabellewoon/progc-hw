@@ -1,0 +1,18 @@
+/* hw4_12.c */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+	char firstname[15], lastname[10];
+	
+	printf("Please key in your last name: ");
+	scanf("%s",lastname);						/* key in string, and assign to char lastname */
+	
+	printf("Please key in your first name: ");
+	scanf("%s",firstname);						/* key in string, and assign to char firstname */
+	
+	printf("\nNice to meet you, %s %s!\n",firstname,lastname); /* go to next line, and print the content in strings */
+
+ 	system("pause");
+ 	return 0;
+}
