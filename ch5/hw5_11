@@ -1,0 +1,17 @@
+/* hw5_11.c */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{    
+   float cels,fahr;
+   
+   printf("Please enter temperature in Celsius:");
+   scanf("%f",&cels);
+   
+   fahr=(9.0/5)*cels+32;
+   
+   printf("%.2f°C=%.2f°F\n",cels,fahr); 
+   
+   system("pause");
+   return 0;
+}
