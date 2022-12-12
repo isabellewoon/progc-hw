@@ -1,0 +1,15 @@
+/* hw4_15, converting hex to octal & decimal */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+	int num;
+	
+	printf("Please key in a hexadecimal: ");
+	scanf("%x", &num);		/* Key in a hexadecimal, and assign it to variable num */
+	printf("The octal form of %x is %o\n",num,num); /*Convert the hexadecimal to an octal & print it as such*/ 
+	printf("The decimal form of %x is %d\n",num,num); /*Convert the hexadecimal to a decimal & print it as such*/ 
+
+ 	system("pause");
+ 	return 0;
+}
