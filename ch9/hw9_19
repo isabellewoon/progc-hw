@@ -30,6 +30,6 @@ void show(int arr[])
 void square(int arr[])
 {
    int i;
-   for(i=0;i<SIZE;i++)	                           /* 平方陣列內容 */
+   for(i=0;i<SIZE;i++)	                           /* 平方陣列裡的元素 */
       arr[i]=(arr[i])*(arr[i]);
 }
