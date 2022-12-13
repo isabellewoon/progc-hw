@@ -1,0 +1,45 @@
+/* hw9_19(2), 於函數內更改陣列元素的值 */
+#include <stdio.h>
+#include <stdlib.h>
+#define ROW 4 
+#define COL 3
+
+void show(int arr[][COL]);		                /* 函數show()的原型 */
+void square(int arr[][COL]);		              /* 函數square()的原型 */
+
+int main(void)
+{
+   int A[ROW][COL]={{26, 5, 7},
+                	  {10, 3,47},
+               		  { 6,76, 8},
+                	  {40, 4,32}};
+   
+   printf("呼叫square()前,陣列的內容為:\n");   
+   show(A);				                            /* 呼叫函數show() */
+   square(A); 			                          /* 呼叫函數square() */
+   printf("\n呼叫square()後,陣列的內容為:\n"); 
+   show(A); 			                            /* 呼叫函數show() */
+   printf("\n");
+   
+   system("pause");
+   return 0;
+}
+
+void show(int arr[][COL])
+{
+   int i,j;
+   for(i=0;i<ROW;i++)
+   {
+      for(j=0;j<COL;j++)                       /* 印出陣列內容 */
+	  	  printf("%04d ",arr[i][j]);
+	    printf("\n");  
+   }   
+} 
+
+void square(int arr[][COL])
+{
+   int i,j;
+   for(i=0;i<ROW;i++)	
+      for(j=0;j<COL;j++)
+      	arr[i][j]=(arr[i][j])*(arr[i][j]);
+}
