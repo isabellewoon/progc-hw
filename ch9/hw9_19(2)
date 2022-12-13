@@ -39,7 +39,7 @@ void show(int arr[][COL])
 void square(int arr[][COL])
 {
    int i,j;
-   for(i=0;i<ROW;i++)					/* 平方陣列內容 */
+   for(i=0;i<ROW;i++)					/* 平方陣列裡的元素 */
       for(j=0;j<COL;j++)
       	arr[i][j]=(arr[i][j])*(arr[i][j]);
 }
