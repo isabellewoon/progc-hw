@@ -25,9 +25,9 @@ int main(void)
    show(a);
 
    search(a,b);						/* 呼叫search()函數 */
-   printf("\n陣列的最大值 = %d\n",b[0]);		   /* 印出陣列的最大值 */
-   printf("陣列的最小值 = %d\n",b[1]);		   /* 印出陣列的最小值 */
-   printf("陣列的平均值 = %lf\n\n",average(a));	   /* 印出陣列的平均值 */
+   printf("\n陣列的最大值 = %d\n",b[0]);			/* 印出陣列的最大值 */
+   printf("陣列的最小值 = %d\n",b[1]);			/* 印出陣列的最小值 */
+   printf("陣列的平均值 = %lf\n\n",average(a));		/* 印出陣列的平均值 */
    
    system("pause");
    return 0;
