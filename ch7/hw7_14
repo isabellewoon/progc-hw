@@ -1,0 +1,16 @@
+/* hw7_14, while loop */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int length=3000, day=0;
+   while(length>5)
+   {
+       length/=2;
+       day++;
+   } 
+   printf("It will take %d days for the rope to be shorter than 5m\n",day+1);
+   
+   system("pause");
+   return 0;
+}
