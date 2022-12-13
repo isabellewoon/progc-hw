@@ -1,0 +1,19 @@
+/* hw6_24, goto statement */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int i=-1,sum=0;
+   start:                          /* 'start' label */
+      i=i+2;
+      sum+=i;
+      printf("%d",i);		
+      if (i<99)
+      {
+         printf("+");              /* Print '+' and go back to 'start'*/
+         goto start;
+      }
+      printf("=%d\n",sum);        /* Print out the sum of 1+2+...+99 */
+   system("pause");
+   return 0;
+}
