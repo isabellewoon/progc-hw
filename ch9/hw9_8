@@ -8,10 +8,10 @@ int main(void)
    
    for(i=0;i<5;i++)
    {
-		if(i<4 && A[max]<A[i+1])
-			max=i+1;
-		if(i<4 && A[min]>A[i+1])
-			min=i+1;
+	if(i<4 && A[max]<A[i+1])
+	   max=i+1;
+	if(i<4 && A[min]>A[i+1])
+	   min=i+1;
    }
 
    printf("The index for the max value is %d\n", max);
