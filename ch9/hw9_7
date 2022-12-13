@@ -1,0 +1,21 @@
+/* hw9_7 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   float A[5];
+   int i=0;
+   float sum=0.0f;
+	
+   for(i=0;i<5;i++)
+   {
+      printf("Key in number %d: ",i+1);
+      scanf("%f",&A[i]);
+      sum+=A[i];
+   }
+   
+   printf("The average is %f\n", sum/5);
+   
+   system("pause");
+   return 0;
+}
