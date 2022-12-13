@@ -1,4 +1,4 @@
-/* hw9_19(2), 於函數內更改二維陣列元素的值 */
+/* hw9_19, 於函數內更改二維陣列元素的值 */
 #include <stdio.h>
 #include <stdlib.h>
 #define ROW 4 
