@@ -1,0 +1,27 @@
+/* hw6_22.c */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{    
+   char ch;
+   
+   printf("Please enter a character :");
+   scanf("%c",&ch);
+   
+   switch(ch)
+   {      
+      case 'A':
+      case 'a':
+         printf("The character you entered is A\n");
+         break;
+      case 'B':
+      case 'b':
+         printf("The character you entered is B\n");
+         break;      
+      default:
+         printf("The character you entered is neither A nor B\n");
+   }              
+      
+   system("pause");
+   return 0;
+}
