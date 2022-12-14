@@ -1,0 +1,16 @@
+/* hw7_16, while loop */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   char ch;
+   while(ch!=17 && ch!=3)               /* 當按下的鍵不是Ctrl+q or Ctrl+c時 */
+   {
+       ch=getch();                      /* 從鍵盤取得字元 */
+       printf("ASCII of ch=%d\n",ch);   /* 印出取得字元的ASCII碼 */
+   } 
+   printf("您已按了Ctrl+q or Ctrl+c...\n");
+   
+   system("pause");
+   return 0;
+}
