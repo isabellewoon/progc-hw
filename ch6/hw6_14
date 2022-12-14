@@ -7,7 +7,7 @@ int main(void)
     printf("Please enter a year: ");
     scanf("%d",&year);
 	
-    if (year%4==0 && year%4000!=0)		           	/* leap years occur every 4 years but not every 4000 years*/
+    if (year%4==0 && year%4000!=0)		        /* leap years occur every 4 years but not every 4000 years*/
     {
         if (year%100==0 && year%400!=0)             	/* centuries are only leap years if they are divisible by 400 */
 	    printf("%d is not a leap year.\n",year);
