@@ -13,18 +13,17 @@ int main(void)
 		scanf("%d", &input);
 		cnt++;
 		
-		if (cnt>=3)
-		{
-			printf("You have entered the wrong password more than three times!\n");
-			break;
-		}
-		
 		if (input == passwd)
 		{
 			printf("The password entered is correct. Welcome to the system!\n");
 			break;
 		}
-	
+		
+		if (cnt>=3)
+		{
+			printf("You have entered the wrong password more than three times!\n");
+			break;
+		}	
 	}
 
  	system("pause");
