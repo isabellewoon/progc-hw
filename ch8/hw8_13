@@ -1,0 +1,32 @@
+/* hw8_13 */
+#include <stdio.h>
+#include <stdlib.h>
+double my_fun(int);
+int fac(int);
+
+int main(void)
+{
+	my_fun(5);
+	my_fun(8);
+	my_fun(10);
+	
+	system("pause");
+ 	return 0;
+}
+
+double my_fun(int n)
+{
+	int k;
+	double sum=0;
+	for(k=1;k<=n;k++)
+		sum+=1.0/fac(k);
+	printf("my_fun(%d)=%lf\n",k-1,sum);
+}
+
+int fac(int n)
+{
+	int i,total=1;
+	for(i=1;i<=n;i++)
+		total*=i;
+	return total;
+}
