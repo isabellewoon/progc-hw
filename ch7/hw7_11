@@ -15,6 +15,6 @@ int main(void)
 	if(sum==n)
 	    printf("%d is a perfect number\n",n);
     }
- 	system("pause");
- 	return 0;
+    system("pause");
+    return 0;
 }
