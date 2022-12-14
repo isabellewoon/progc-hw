@@ -1,0 +1,31 @@
+/* hw7_30 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+	int input;
+	int cnt=0;
+	int passwd=6128;
+	
+	for (cnt=0; cnt<3; cnt++)
+	{
+		printf("Please enter the password: ");
+		scanf("%d", &input);
+		
+		if (input == passwd)
+		{
+			printf("The password entered is correct. Welcome to the system!\n");
+			break;
+		}
+		else if (cnt<2)
+			continue;
+         else
+         {
+            printf("You have entered the wrong password more than three times!\n");
+            break;
+         }
+	}
+
+ 	system("pause");
+ 	return 0;
+}
