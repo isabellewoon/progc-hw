@@ -29,12 +29,12 @@ int main(void)
    
    search(a,b);
    
-   printf("\n(d) 溫度最高的日子與時段 = ?\n");
+   printf("\n(d) 溫度最高的日子與時段 = 我不會qq\n");
    
    printf("\n(d)(i) 最高的溫度\n");
    printf("The highest temperature is %.1f degrees Celsius\n",b[0]);
    
-   printf("\n(e) 溫度最低的日子與時段 = ?\n");
+   printf("\n(e) 溫度最低的日子與時段 = 我不會qq\n");
    
    printf("\n(e)(i) 最低的溫度\n");
    printf("The lowest temperature is %.1f degrees Celsius\n",b[1]);
@@ -58,7 +58,7 @@ void show(float arr[][COL])
    }
 }
 
-void day_average(float arr[][COL])				/* ERROR!!! */
+void day_average(float arr[][COL])
 {
    int i,j;
    double sum=0;
