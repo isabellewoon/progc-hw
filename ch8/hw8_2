@@ -1,0 +1,21 @@
+/* hw8_2, 簡單的函數範例 */
+#include <stdio.h>
+#include <stdlib.h>
+void kitty(int);                  /* kitty()函數的原型 */ 
+int main(void)
+{
+   int k;
+   printf("Enter a number: ");
+   scanf("%d",&k);
+   kitty(k);                      /* 呼叫 kitty 函數 */
+  
+   system("pause");
+   return 0;
+}
+
+void kitty(int k)
+{
+   int i;
+   for(i=1;i<=k;i++)
+      printf("Hello Kitty\n");
+}
