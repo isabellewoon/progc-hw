@@ -1,0 +1,14 @@
+/* hw8_32 */
+#include <stdio.h>
+#include <stdlib.h>
+#define CUBE(X) (X)*(X)*(X) 	/* 定義巨集CUBE(X)為(X)*(X)*(X) */
+int main(void)
+{
+   int n;
+   printf("Input an integer:");
+   scanf("%d",&n);
+   printf("%d*%d*%d=%d\n",n,n,n,CUBE(n));  /* 印出n+1的平方*/
+
+   system("pause");
+   return 0;
+}
