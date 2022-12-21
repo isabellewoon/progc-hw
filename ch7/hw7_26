@@ -1,0 +1,17 @@
+/* hw7_26, 利用巢狀迴圈印出三角形 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int i,j,n=5;			/* 設定迴圈初值 */
+
+   for (i=1;i<=n;i++)
+   {
+      for (j=1;j<=i;j++)
+         printf("%d", j);
+      printf("\n");
+   }
+
+   system("pause");
+   return 0;
+}
