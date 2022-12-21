@@ -4,7 +4,7 @@
 #define CUBE(X) (X)*(X)*(X)            /* 定義巨集CUBE(X)為(X)*(X)*(X) */
 int main(void)
 {
-   int n1=8;
+   int n1=5;
    double n2=2.4;
    printf("%d^3=%d\n",n1,CUBE(n1));    /* 印出三次方*/
    printf("%.1f^3=%f\n",n2,CUBE(n2));
