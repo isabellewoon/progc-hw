@@ -1,0 +1,35 @@
+/* hw7_12, check whether a number is an Armstrong number */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int a,num,r,sum;
+
+   while(1)
+   {
+      do		
+      {
+         sum=0;
+         printf("Input an integer:");
+         scanf("%d",&num);
+      }
+      while (num<=99);   		/* 必須輸入大於99的正整數 */
+      
+      a=num;
+
+      while (a!=0)
+      {
+         r=a%10;			/* 計算a/10的餘數 */
+         sum+=(r*r*r);		
+         a/=10;			/* 計算a/10，再把結果設回給a */	
+      }
+      
+      if (sum==num)      
+      	printf("%d is a Armstrong number\n\n", num);
+      else
+      	printf("%d is NOT a Armstrong number\n\n", num);
+   }
+   
+   system("pause");
+   return 0;
+}
