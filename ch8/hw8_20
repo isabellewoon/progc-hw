@@ -1,0 +1,23 @@
+/* hw8_20, 遞迴函數，計算sum */
+#include <stdio.h>
+#include <stdlib.h>
+int sum(int);     /* 遞迴函數sum()的原型 */
+int main(void)
+{
+   int n;
+   printf("Enter a number: "); 
+   scanf("%d",&n);
+   
+   printf("sum(%d)=%d\n",n,sum(n));   /* 呼叫遞迴函數sum() */
+
+   system("pause");
+   return 0;
+}
+
+int sum(int n)	/* 自訂函數sum()，計算1+2+3+...+n */
+{
+   if(n>0)
+      return (n+sum(n-1));
+   if(n==0)
+      return 0;
+}
