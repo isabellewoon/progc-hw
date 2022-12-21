@@ -1,0 +1,32 @@
+/* hw10_21 */
+#include <stdio.h>
+#include <stdlib.h>
+
+void display(char *,int);
+
+int main(void)
+{
+   char str[25];
+   printf("Enter a string: ");
+   scanf("%s",&str);
+   
+   int i;
+   do
+   {
+      printf("Enter an integer: ");
+      scanf("%d",&i);
+   }
+   while(i<=0 || i>=25);
+   
+   display(str,i);
+
+   system("pause");
+   return 0;
+}
+
+void display(char *ptr,int n)
+{
+	printf("str[%d] = ",n);
+	ptr+=(n-1);
+	printf("%s\n",ptr);
+}
