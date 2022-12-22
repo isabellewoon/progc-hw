@@ -10,11 +10,14 @@ int main(void)
    
    printf("arr[5]={");
 
-   for(i = 0; i < 5; i++)
-        if(i != 4)
-            printf("%d,", *(ptr+i));
-        else
-            printf("%d}\n", *(ptr+i));
+   for(i=0;i<5;i++)
+   {
+   	if(i==4)
+         printf("%d}\n",*(ptr+i));
+      else
+         printf("%d,",*(ptr+i));
+   }
+
    
    printf("arr[5]={");
 
