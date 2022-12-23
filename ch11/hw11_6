@@ -1,0 +1,36 @@
+/* hw11_6, 巢狀結構的使用 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   struct date            /* 定義結構date */
+   {
+      int year;
+      int month;
+      int day;
+   };
+   struct data            /* 定義巢狀結構data */
+   {
+      char name[10];
+      int math;
+      struct date birthday;		
+   } s1;
+   
+   printf("請輸入姓名: "); 
+   gets(s1.name);   
+   printf("請輸入成績: "); 
+   scanf("%d",&s1.math);
+   printf("請輸入生日年份: "); 
+   scanf("%d",&s1.birthday.year);
+   printf("請輸入生日月份: "); 
+   scanf("%d",&s1.birthday.month);
+   printf("請輸入生日日期: "); 
+   scanf("%d",&s1.birthday.day);
+   
+   printf("\n學生姓名: %s\n",s1.name);  
+   printf("生日: %d年%d月%d日\n",s1.birthday.year,s1.birthday.month,s1.birthday.day);
+   printf("數學成績: %d\n",s1.math);
+   
+   system("pause");
+   return 0;
+}
