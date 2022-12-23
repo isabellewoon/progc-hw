@@ -1,0 +1,27 @@
+/* hw11_9, 結構陣列的使用 */
+#include <stdio.h>
+#include <stdlib.h>
+#define MAX 5
+int main(void)
+{
+   int i;
+   double sum=0;
+   struct data			/* 定義結構data */
+   {
+      char name[10];
+      int math;
+   } student[MAX]={{"Aaron",56},{"Bella",68},{"Calvin",23},{"Delia",17},{"Elena",89}};
+   
+   printf("(b) 所有成績不及格的學生姓名與分數\n");
+    for(i=0;i<MAX;i++)
+       if(student[i].math<60)
+          printf("%s的數學成績=%d\n",student[i].name,student[i].math);
+      
+    printf("\n(c) 成績的平均值\n");
+       for(i=0;i<MAX;i++)
+          sum+=student[i].math;
+      printf("平均成績=%.2f\n",sum/MAX);
+   
+   system("pause");
+   return 0;
+}
