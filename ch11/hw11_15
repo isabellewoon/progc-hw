@@ -1,0 +1,43 @@
+/* hw11_15 */
+#include <stdio.h>
+#include <stdlib.h>
+
+struct data
+{
+	char name[10];
+	int math;
+};
+
+void display(struct data);
+void add5(struct data *);
+
+int main(void)
+{
+	struct data s1={"Jenny",74};
+	struct data s2={"Teresa",88};
+
+	printf("呼叫add5函數前:\n");
+	display(s1);
+	display(s2);
+
+	add5(&s1);
+	add5(&s2);
+	
+	printf("\n呼叫add5函數後:\n");
+	display(s1);
+	display(s2);
+
+ 	system("pause");
+ 	return 0;
+}
+
+void display(struct data p1)
+{
+    printf("學生姓名: %s\n",p1.name);
+    printf("數學成績: %d\n",p1.math);
+}
+
+void add5(struct data *p1)
+{
+	p1->math+=5;
+}
