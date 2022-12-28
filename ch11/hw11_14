@@ -1,0 +1,33 @@
+/* hw11_14 */
+#include <stdio.h>
+#include <stdlib.h>
+
+struct data
+{
+	char name[10];
+	int math;
+};
+
+void display(struct data);
+
+int main(void)
+{
+	struct data s1={"Jenny",74};
+	
+	printf("display函數中：\n");
+	display(s1);
+	
+	printf("\n主函數中：\n");
+	printf("學生姓名: %s\n",s1.name);
+    printf("數學成績: %d\n",s1.math);
+
+ 	system("pause");
+ 	return 0;
+}
+
+void display(struct data st)
+{
+    st.math+=10;
+    printf("學生姓名: %s\n",st.name);
+    printf("數學成績: %d\n",st.math);
+}
