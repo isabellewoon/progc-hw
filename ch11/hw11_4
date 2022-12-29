@@ -4,52 +4,52 @@
 
 struct time
 {
-	int hour;
-	int minutes;
-	double second;
+   int hour;
+   int minutes;
+   double second;
 };
 
 int main(void)
 {
- 	struct time start={12,32,25.49};
- 	struct time end={15,12,17.53};
- 	struct time elapse;
- 	
- 	if(end.second<start.second)
- 	{
- 	 	elapse.second=(end.second+60)-start.second;
- 	 	
- 	 	if(end.minutes<start.minutes)
- 	 	{
- 	 	    elapse.minutes=(end.minutes-1+60)-start.minutes;
- 	 	    elapse.hour=(end.hour-1)-start.hour;
- 	 	}
- 	 	else
- 	 	{
- 	 	    elapse.minutes=(end.minutes-1)-start.second;
- 	 	    elapse.hour=end.hour-start.hour;
- 	 	}
- 	}
- 	else
- 	{
- 	    elapse.second=end.second-start.second;
- 	    
- 	    if(end.minutes<start.minutes)
- 	 	{
- 	 	    elapse.minutes=(end.minutes+60)-start.minutes;
- 	 	    elapse.hour=(end.hour-1)-start.hour;
- 	 	}
- 	 	else
- 	 	{
- 	 	    elapse.minutes=end.minutes-start.second;
- 	 	    elapse.hour=end.hour-start.hour;
- 	 	}
- 	}
- 	
- 	printf("start time: %02d:%02d:%04.2lf\n",start.hour,start.minutes,start.second);
- 	printf("end time: %02d:%02d:%04.2lf\n",end.hour,end.minutes,end.second);
- 	printf("elapsed time: %02d:%02d:%04.2lf\n",elapse.hour,elapse.minutes,elapse.second);
-
- 	system("pause");
- 	return 0;
+   struct time start={12,32,25.49};
+   struct time end={15,12,17.53};
+   struct time elapse;
+   
+   if(end.second<start.second)
+   {
+      elapse.second=(end.second+60)-start.second;
+      
+      if(end.minutes<start.minutes)
+      {
+         elapse.minutes=(end.minutes-1+60)-start.minutes;
+	 elapse.hour=(end.hour-1)-start.hour;
+      }
+      else
+      {
+         elapse.minutes=(end.minutes-1)-start.second;
+	 elapse.hour=end.hour-start.hour;
+      }
+   }
+   else
+   {
+      elapse.second=end.second-start.second;
+      
+      if(end.minutes<start.minutes)
+      {
+         elapse.minutes=(end.minutes+60)-start.minutes;
+	 elapse.hour=(end.hour-1)-start.hour;
+      }
+      else
+      {
+         elapse.minutes=end.minutes-start.second;
+	 elapse.hour=end.hour-start.hour;
+      }
+   }
+   
+   printf("start: %02d:%02d:%04.2lf\n",start.hour,start.minutes,start.second);
+   printf("end: %02d:%02d:%04.2lf\n",end.hour,end.minutes,end.second);
+   printf("elapse: %02d:%02d:%04.2lf\n",elapse.hour,elapse.minutes,elapse.second);
+   
+   system("pause");
+   return 0;
 }
