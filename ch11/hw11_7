@@ -17,7 +17,7 @@ int main(void)
       struct date birthday;
    }s1={"Mary Wang",74,{10,2}};
     
- 	printf("The size of variable s1 is %d\n",sizeof(s1));
+ 	printf("The size of the variable s1 is %d\n",sizeof(s1));
 
  	system("pause");
  	return 0;
