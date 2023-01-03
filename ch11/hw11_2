@@ -1,0 +1,28 @@
+/* hw11_2 */
+#include <stdio.h>
+#include <stdlib.h>
+
+struct date
+{
+	int year;
+	int month;
+	int day;
+};
+
+int main(void)
+{
+ 	struct date holiday={2004,4,26};
+ 	struct date festival;
+ 	
+ 	printf("Please enter the year of the festival: ");
+ 	scanf("%d",&festival.year);
+ 	printf("Please enter the month of the festival: ");
+ 	scanf("%d",&festival.month);
+ 	printf("Please enter the day of the festival: ");
+ 	scanf("%d",&festival.day);
+ 	
+ 	printf("\nThe holiday is on %02d/%02d/%4d while the festival is on %02d/%02d/%4d.\n\n",holiday.month,holiday.day,holiday.year,festival.month,festival.day,festival.year);
+
+ 	system("pause");
+ 	return 0;
+}
