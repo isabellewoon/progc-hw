@@ -1,0 +1,18 @@
+/* hw11_1b */
+#include <stdio.h>
+#include <stdlib.h>
+
+struct data
+{
+	int num;
+	char ch;
+	double dist;
+}aaa;
+
+int main(void)
+{
+ 	printf("The size of the variable aaa is %d\n",sizeof(aaa));
+
+ 	system("pause");
+ 	return 0;
+}
