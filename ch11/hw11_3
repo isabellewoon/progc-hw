@@ -1,0 +1,18 @@
+/* hw11_3 */
+#include <stdio.h>
+#include <stdlib.h>
+
+struct date
+{
+	int year;
+	int month;
+	int day;
+};
+
+int main(void)
+{
+ 	printf("The size of variables under struct date is %d\n",sizeof(struct date));
+
+ 	system("pause");
+ 	return 0;
+}
