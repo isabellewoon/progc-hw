@@ -1,0 +1,18 @@
+/* hw11_5 */
+#include <stdio.h>
+#include <stdlib.h>
+
+struct time
+{
+	int hour;
+	int minutes;
+	double second;
+};
+
+int main(void)
+{
+ 	printf("The size of variables under struct time is %d\n",sizeof(struct time));
+
+ 	system("pause");
+ 	return 0;
+}
