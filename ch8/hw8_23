@@ -1,0 +1,22 @@
+/* hw8_23, 遞回函數 */
+#include <stdio.h>
+#include <stdlib.h>
+
+int f(int);
+
+int main(void)
+{
+    int k=5;
+    
+    printf("f(%d)=%d\n",k,f(k));
+    
+    system("pause");
+    return 0;
+}
+
+int f(int n)
+{
+    if(n!=0)
+        return 2*f(n-1)-5;
+    else return 3;
+}
