@@ -1,23 +1,28 @@
-/* hw8_20, 遞迴函數，計算sum */
+/* hw8_20, 遞回函數 */
 #include <stdio.h>
 #include <stdlib.h>
-int sum(int);     /* 遞迴函數sum()的原型 */
+
+int sum(int);
+
 int main(void)
 {
-   int n;
-   printf("Enter a number: "); 
-   scanf("%d",&n);
+   int k;
    
-   printf("sum(%d)=%d\n",n,sum(n));   /* 呼叫遞迴函數sum() */
-
+   do
+   {
+      printf("Please enter a positive non-zero integer:");
+      scanf("%d",&k);
+   }while(k<=0);
+   
+   printf("sum(%d)=%d\n",k,sum(k));
+    
    system("pause");
    return 0;
 }
 
-int sum(int n)	/* 自訂函數sum()，計算1+2+3+...+n */
+int sum(int n)
 {
-   if(n>0)
-      return (n+sum(n-1));
-   if(n==0)
-      return 0;
+   if(n!=1)
+      return n+sum(n-1);
+   else return n;
 }
