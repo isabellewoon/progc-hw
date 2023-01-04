@@ -1,0 +1,28 @@
+/* hw8_22, 遞回函數 */
+#include <stdio.h>
+#include <stdlib.h>
+
+int rsum(int);
+
+int main(void)
+{
+    int k;
+    
+    do
+    {
+    printf("Please enter an integer that is larger than 1:");
+    scanf("%d",&k);
+    }while(k<=1);
+    
+    printf("rsum(%d)=%d\n",k,rsum(k));
+    
+    system("pause");
+    return 0;
+}
+
+int rsum(int n)
+{
+    if(n!=2)
+        return (n-1)*n+rsum(n-1);
+    else return (n-1)*n;
+}
