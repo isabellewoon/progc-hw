@@ -1,0 +1,22 @@
+/* hw8_6, 更多的函數應用範例 */
+#include <stdio.h>
+#include <stdlib.h>
+
+int power(int,int);
+
+int main(void)
+{
+    int x=5, n=3;
+    printf("%d^%d=%d\n",x,n,power(x,n));
+    
+    system("pause");
+    return 0;
+}
+
+int power(int x,int n)
+{
+    int i, k=1;
+    for(i=0;i<n;i++)
+        k*=x;
+    return k;
+}
