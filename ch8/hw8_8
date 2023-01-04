@@ -1,0 +1,21 @@
+/* hw8_8, 更多的函數應用範例 */
+#include <stdio.h>
+#include <stdlib.h>
+
+double f(double);
+
+int main(void)
+{
+    f(-3.2);
+    f(-2.1);
+    f(0);
+    f(2.1);
+    
+    system("pause");
+    return 0;
+}
+
+double f(double x)
+{
+    printf("f(%.1lf)=%lf\n",x,3*(x)*(x)*(x)+2*(x)-1);
+}
