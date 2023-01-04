@@ -1,0 +1,25 @@
+/* hw8_21, 遞回函數 */
+#include <stdio.h>
+#include <stdlib.h>
+
+int sum2(int);
+
+int main(void)
+{
+    int k;
+    printf("Please enter an integer:");
+    scanf("%d",&k);
+    
+    printf("sum2(%d)=%d",k,sum2(k));
+    
+    system("pause");
+    return 0;
+}
+
+int sum2(int n)
+{
+    int total=0;
+    if(n!=1)
+        return (2*n+sum2(n-1));
+    else return 2;
+}
