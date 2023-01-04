@@ -1,4 +1,4 @@
-/* hw8_21, ???? */
+/* hw8_21, 遞回函數 */
 #include <stdio.h>
 #include <stdlib.h>
 
