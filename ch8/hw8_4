@@ -1,0 +1,19 @@
+/* hw8_4, 函數的基本架構 */
+#include <stdio.h>
+#include <stdlib.h>
+
+double square(double);
+
+int main(void)
+{
+    double x=4.0;
+    printf("%.1lf^2=%lf\n",x,square(x));
+    
+    system("pause");
+    return 0;
+}
+
+double square(double x)
+{
+    return (x)*(x);
+}
