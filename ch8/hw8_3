@@ -1,0 +1,18 @@
+/* hw8_3, 函數的基本架構 */
+#include <stdio.h>
+#include <stdlib.h>
+
+int cub(int);
+
+int main(void)
+{
+    printf("2^3=%d\n",cub(2));
+    
+    system("pause");
+    return 0;
+}
+
+int cub(int x)
+{
+    return (x)*(x)*(x);
+}
